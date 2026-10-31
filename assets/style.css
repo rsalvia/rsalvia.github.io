@@ -74,7 +74,7 @@ section+section{border-top:1px solid var(--line)}
 .prose li{margin-bottom:6px}
 .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:8px}
 .step .k{font-size:12px;font-weight:700;color:var(--teal);letter-spacing:1px}
-.screens{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;margin:24px 0}
+.screens{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;margin:24px 0}
 .screens figure{background:#EEF1F2;border-radius:14px;padding:16px}
 .screens img{border-radius:10px;box-shadow:0 4px 18px rgba(29,35,48,.12);margin:0 auto;max-height:560px;width:auto}
 figcaption{font-size:14px;color:var(--mute);margin-top:10px;text-align:center}
@@ -97,7 +97,7 @@ td{border-bottom:1px solid var(--line);padding:10px 8px;vertical-align:top}
   .wrap{padding:0 16px}
   .nav{gap:14px;font-size:14px}
   .grid-3,.grid-2,.project,.facts,.steps,.results ul{grid-template-columns:1fr}
-  .screens{grid-template-columns:1fr}
+  .screens{grid-template-columns:1fr 1fr}
   .hero{padding:56px 0 48px}
   section{padding:48px 0}
   table{font-size:14px;display:block;overflow-x:auto}
