@@ -33,7 +33,11 @@ section+section{border-top:1px solid var(--line)}
 
 /* hero */
 .hero{padding:96px 0 80px}
-.hero h1{margin-bottom:12px}
+.hero h1{margin-bottom:16px}
+.story{font-size:clamp(28px,4vw,44px)}
+.story span{display:block;margin-bottom:6px}
+.story span:nth-child(2){color:var(--mute);font-weight:600}
+.story span:nth-child(3){color:var(--teal)}
 .hero .role{font-size:clamp(20px,2.4vw,26px);font-weight:600;color:var(--teal);margin-bottom:20px}
 .tags{display:flex;flex-wrap:wrap;gap:8px;margin:24px 0 32px}
 .tag{font-size:14px;font-weight:600;padding:6px 12px;border-radius:999px;background:var(--teal-soft);color:var(--teal)}
