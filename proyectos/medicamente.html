@@ -1,0 +1,95 @@
+<!doctype html><html lang="es"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MedicaMente · Caso de estudio</title><meta name="description" content="Caso de estudio de MedicaMente: registro de tomas de medicación para personas mayores.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css"></head><body>
+<header class="site-head"><div class="wrap"><a class="brand" href="../index.html">Romina <span>Salvia</span></a><nav class="nav"><a href="../index.html">Inicio</a><a href="../proyectos/index.html" aria-current=page>Proyectos</a><a href="../sobre-mi.html">Sobre mí</a></nav></div></header>
+<main>
+<section class="case-hero"><div class="wrap">
+<p class="eyebrow">Caso de estudio · MedTech</p>
+<h1>MedicaMente</h1>
+<p class="lead" style="margin-top:16px">Que ninguna persona mayor que gestiona sola su medicación tenga que adivinar si ya tomó una dosis.</p>
+<div class="facts">
+<div class="fact"><b>Mi rol</b>Proyecto individual: investigación, estrategia, UX/UI, prototipo y validación</div>
+<div class="fact"><b>Contexto</b>Diplomatura UX/UI (Coderhouse), 2026</div>
+<div class="fact"><b>Plataformas</b>Mobile 375 px y desktop 1440 px</div>
+<div class="fact"><b>Herramientas</b>Figma, Maze</div>
+</div>
+<div class="toc"><a href="#resultados">Resultados</a><a href="#problema">Problema</a><a href="#proceso">Proceso</a><a href="#solucion">Solución</a><a href="#validacion">Validación</a><a href="#aprendizajes">Aprendizajes</a></div>
+</div></section>
+
+<section id="resultados" style="border-top:0;padding-top:0"><div class="wrap">
+<div class="results"><h2>Resultados en una mirada</h2>
+<ul>
+<li><b>O1 primero</b>Prioricé 5 oportunidades con RICE: registrar la toma en el momento ganó 80 a 37,5 y es condición de las demás.</li>
+<li><b>57,9&nbsp;%</b>de misclicks al confirmar la toma en mobile (80&nbsp;% de éxito) contra 11,1&nbsp;% en desktop (100&nbsp;%): el problema era la jerarquía de acciones.</li>
+<li><b>3 hallazgos</b>priorizados por severidad y aplicados en el prototipo (crítico, mayor y menor).</li>
+<li><b>2 flujos</b>completos y navegables de punta a punta, en mobile y en desktop.</li>
+</ul>
+<p class="note">Test no moderado en Maze con 5 participantes por versión. Es una muestra chica: indica dónde mirar, no prueba el comportamiento en uso real.</p></div>
+</div></section>
+
+<section id="problema"><div class="wrap prose">
+<p class="eyebrow">01 · Problema</p><h2>El olvido es conocido. La duda posterior, no.</h2>
+<p>Las personas mayores polimedicadas que gestionan su medicación solas no tienen una manera confiable de saber si ya tomaron una dosis. Ante la duda, la omiten o la repiten.</p>
+<ul>
+<li>En enfermedades crónicas, la adherencia ronda en promedio el 50&nbsp;% en países desarrollados (OMS, 2003).</li>
+<li>El 42,3&nbsp;% de los afiliados de PAMI estudiados toma cinco o más medicamentos (Universidad Nacional de Rosario, 2.231 afiliados).</li>
+<li>Los centros de toxicología describen como causa habitual de doble dosis olvidar que la dosis ya se había tomado (National Capital Poison Center).</li>
+</ul>
+<p><b>La oportunidad.</b> Recordar y registrar ya existe (por ejemplo, Medisafe). Lo que falta es que el registro sea confiable para este segmento: que refleje lo que pasó y que la persona le crea cuando aparece la duda.</p>
+<div class="grid-2" style="margin-top:24px">
+<div class="card"><h3>Usuaria principal</h3><p class="mute">60 años o más, con varios medicamentos crónicos en distintos horarios. Usa el celular para tareas básicas y quiere sostener su independencia.</p></div>
+<div class="card"><h3>Actor secundario</h3><p class="mute">Familiar o cuidador que acompaña a distancia. Busca tranquilidad sin invadir la autonomía de la persona.</p></div>
+</div>
+</div></section>
+
+<section id="proceso"><div class="wrap prose">
+<p class="eyebrow">02 · Proceso</p><h2>Antes de dibujar, decidir qué problema resolver</h2>
+<div class="steps">
+<div class="card step"><div class="k">VISIÓN</div><h3>Principios</h3><p class="mute">Certeza antes que funciones. Autonomía antes que control. Esfuerzo mínimo para registrar. El producto no indica: deriva al profesional.</p></div>
+<div class="card step"><div class="k">ECOSISTEMA</div><h3>Dependencias</h3><p class="mute">El valor central depende de tres eslabones que el producto no controla del todo: que la persona registre, que el aviso llegue y que el tratamiento esté bien cargado.</p></div>
+<div class="card step"><div class="k">RICE</div><h3>Priorización</h3><p class="mute">Elegí RICE porque hace explícita la confianza: casi todos los supuestos estaban sin validar. Ganó «registrar en el momento de la toma».</p></div>
+<div class="card step"><div class="k">JTBD</div><h3>Job Map</h3><p class="mute">El dolor se siente al Confirmar («¿ya la tomé?») pero se origina al Concluir: si la toma no deja constancia, no hay nada que consultar.</p></div>
+</div>
+<div class="callout">Los puntajes RICE usan estimaciones de trabajo, no datos medidos. Por eso el análisis incluye una prueba de sensibilidad: aun duplicando el esfuerzo de la opción ganadora, sigue primera.</div>
+</div></section>
+
+<section id="solucion"><div class="wrap">
+<p class="eyebrow">03 · Solución</p><h2>Registrar la toma en un paso y responder la duda de un vistazo</h2>
+<p class="lead">El flujo principal va de la notificación a la confirmación y deja la toma visible en el inicio y en el historial, con el estado de cada medicamento.</p>
+<div class="screens">
+<figure><img src="../img/mm_s1_inicio.png" alt="Inicio mobile con las tomas del día y su estado" loading="lazy"><figcaption>Inicio: el estado de cada toma del día, sin abrir nada.</figcaption></figure>
+<figure><img src="../img/mm_s5_listo.png" alt="Confirmación de toma registrada" loading="lazy"><figcaption>Confirmación: la toma queda cerrada con constancia.</figcaption></figure>
+<figure><img src="../img/mm_s6_historial.png" alt="Historial actualizado con tomas completadas y omitidas" loading="lazy"><figcaption>Historial: la respuesta a «¿ya la tomé?».</figcaption></figure>
+</div>
+<img class="wide" src="../img/mm_d1_home_desktop.jpg" alt="Inicio desktop con la próxima toma, progreso del día y agenda" loading="lazy">
+<p class="mute" style="font-size:14px">Versión desktop (1440 px, grilla de 12 columnas): próxima toma, progreso del día y agenda.</p>
+<h3 style="margin-top:40px">Del wireframe a la alta fidelidad</h3>
+<img class="wide" src="../img/mm_evolucion.jpg" alt="Comparación entre el wireframe de baja fidelidad y la pantalla final" loading="lazy">
+<p class="mute" style="font-size:14px">La lista sin estados del wireframe pasó a tarjetas con ícono y color por estado (pendiente, tomada, omitida), navegación inferior y estados de carga, vacío y error.</p>
+<h3 style="margin-top:40px">Sistema de diseño</h3>
+<img class="wide" src="../img/mm_tokens.jpg" alt="Tokens de color primitivos y semánticos, escala tipográfica y espaciado base 4" loading="lazy">
+<p class="mute" style="font-size:14px">Tokens primitivos y semánticos, Plus Jakarta Sans y una escala de espaciado de 4 px, con un solo color de acento en todo el producto.</p>
+</div></section>
+
+<section id="validacion"><div class="wrap">
+<p class="eyebrow">04 · Validación</p><h2>Qué mostró el test y qué cambié</h2>
+<table><tr><th>Hallazgo</th><th>Severidad</th><th>Cambio aplicado</th></tr>
+<tr><td>Confirmar la toma en mobile: 80&nbsp;% de éxito, 1 de 5 abandonó y 57,9&nbsp;% de misclicks. En desktop la misma tarea llegó al 100&nbsp;%.</td><td><span class="sev c">Crítico</span></td><td>Separé el botón principal de las acciones secundarias: Posponer y Omitir pasaron a tener borde visible y fondo sutil.</td></tr>
+<tr><td>La notificación no se reconoce enseguida como entrada al flujo: 37,5&nbsp;% de misclicks en mobile y la tarea más lenta.</td><td><span class="sev m">Mayor</span></td><td>La notificación suma la acción visible «Confirmar toma» y sigue siendo tocable en toda su superficie.</td></tr>
+<tr><td>Desde «Listo», 1 de 5 fue al Historial antes que a Inicio; en desktop, 20&nbsp;% de abandono.</td><td><span class="sev n">Menor</span></td><td>«Volver al inicio» queda como única acción principal y «Ver historial completo» pasa a link de texto.</td></tr>
+</table>
+</div></section>
+
+<section id="aprendizajes"><div class="wrap prose">
+<p class="eyebrow">05 · Aprendizajes y próximos pasos</p><h2>Lo que sé y lo que todavía no</h2>
+<ul>
+<li><b>La jerarquía visual pesa más en mobile.</b> La misma tarea funcionó en desktop y falló en mobile: el problema no era el flujo sino cuántas acciones competían en la pantalla.</li>
+<li><b>Priorizar con la confianza a la vista</b> evitó elegir la oportunidad que parecía más grande pero no tenía evidencia.</li>
+<li><b>Lo que falta validar:</b> que la persona registre en el momento y lo sostenga en el tiempo, y con qué frecuencia aparece la duda. El próximo paso es un estudio de diario con usuarias del segmento.</li>
+</ul>
+</div></section>
+</main>
+<footer class="site-foot"><div class="wrap"><span>Romina Salvia · Product Designer · Mar del Plata, Argentina</span><span><a href="https://www.linkedin.com/in/rominasalvia" target="_blank" rel="noopener">LinkedIn</a></span></div></footer>
+</body></html>
