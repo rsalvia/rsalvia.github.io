@@ -125,3 +125,12 @@ td{border-bottom:1px solid var(--line);padding:10px 8px;vertical-align:top}
   .facts{grid-template-columns:repeat(2,1fr)}
   .project{grid-template-columns:1fr}
 }
+/* hero en pantallas bajas: el botón al caso principal queda visible */
+.hero .lead{margin-top:24px}
+.hero .tags{margin:0 0 24px}
+@media (max-height:760px) and (min-width:821px){
+  .hero{padding:32px 0 48px}
+  .story{font-size:clamp(24px,2.6vw,32px)}
+  .hero .role{font-size:20px;margin-bottom:12px}
+  .hero .tags{margin-bottom:18px}
+}
